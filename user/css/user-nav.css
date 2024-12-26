@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Nerko+One&family=Pacifico&display=swap');
+
+:root{
+    --peach: #F7A072;
+    --parrot: #66ffac;
+    --navy-blue: #132c34;
+    --light: #f5f5f5;
+    --grey: #CFD7C7;
+    --blue: #40798C;
+    --alice: #8dcbff;
+    --purple: #ff90e3;
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+    position: sticky;
+    top: 0px;
+    height: 68px;
+    align-items: center;
+    background: white;
+    border-bottom: 1px solid #c9c9c9;
+    box-shadow: 0px -12px 20px black;
+    opacity: 0.95;
+    z-index: 1;
+}
+.nav-left{
+    width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+nav a, #search, .dropbtn{
+    display: flex;
+    align-items: center;
+}
+nav a{
+    color: #2c2c2c;
+    text-decoration: none;
+}
+nav a:nth-child(2){
+    margin-right: 5px;
+}
+nav a:nth-child(2) i{
+    margin-right: 7px;
+    width: 14px;
+    font-size: 17px;
+}
+nav #nav-logo{
+    padding-left: 20px;
+    font-family: 'Pacifico';
+    font-size: 30px;
+}
+nav #search{
+    color: #4e4e4e;
+    background: #f7f7f7;
+    padding: 0px 15px;
+    margin-left: 10px;
+    border-radius: 30px;
+    width: 34vw;
+    height: 35px;
+}
+nav #search i{
+    font-size: 19px;
+    height: 37px;
+}
+nav #search input{
+    border: none;
+    background: #f7f7f7;
+    outline: none;
+    margin-left: 10px;
+    width: 29vw;
+}
+.dropbtn{
+    background-color: white;
+    color: #4e4e4e;
+    padding: 5px;
+    display: flex;
+    background-color: white;
+    color: #4e4e4e;
+    justify-content: center;
+    width: 144px;
+    font-size: 15px;
+    border: none;
+    gap: 5px;
+    cursor: pointer;
+}
+.dropbtn img{
+    width: 40px;
+    border-radius: 50px;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+    margin-right: 22px;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+} 
+.dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+} 
+.dropdown-content a:hover{
+    background-color: #f1f1f1
+}  
+.dropdown:hover .dropdown-content{
+    display: block;
+}

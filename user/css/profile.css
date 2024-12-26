@@ -1,0 +1,87 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.full-page{
+    width: 95vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(8,1fr) repeat(4, minmax(48px, 1fr));
+    grid-row: repeat(auto-fill, 1fr);
+    column-gap: 15px;
+    margin-bottom: 50px;
+}
+.left-side{
+    grid-column: 1 / 9;
+    margin: 25px;
+    padding: 25px;
+    border-right: 1px solid rgb(192, 192, 192);
+}
+.read-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    width: 80%;
+    height: 200px;
+    background: radial-gradient(#d1d1d154, #00000057);
+    border-radius: 10px;
+}
+.read-list div{
+    text-align: center  ;
+}
+.read-list h3{
+    margin-bottom: 35px;
+}
+.read-list a{
+    text-decoration: none;
+    background: #000;
+    color: white;
+    font-size: 17px;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+.right-side{
+    grid-column: 9 / -1;
+    padding: 22px;
+    border-radius: 18px;
+}
+#side-profile{
+    padding: 15px;
+    text-align: center;
+    display: block;
+}
+#side-profile a{
+    text-decoration: none;
+}
+#side-profile img{
+    width: 70%;
+    border-radius: 50%;
+    box-shadow: 0px 0 14px #000000a6;
+}
+#side-profile .profile-name{
+    margin-top: 20px;
+    color: black;
+    font-weight: 600;
+    font-size: 30px;
+}
+#side-profile .followers{
+    color: #125c72;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+#side-profile .bio{
+    margin-top: 10px;
+    text-align: justify;
+}
+#side-profile .edit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+    font-size: 17px;
+}
+#side-profile .edit i{
+    margin-left: 3px;
+    font-size: 14px;
+}

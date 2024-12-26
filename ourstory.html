@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WriteFLix</title>
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/ourstory.css">
+    <link rel="stylesheet" href="bootstrap-5.2.3/css/bootstrap.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html" id="nav-logo">WriteFLix</a>
+        <a href="ourstory.html" class="active">Our Story</a>
+        <a href="membership.html">Membership</a>
+        <a href="write.html">Write</a>
+        <a href="#login-modal" class="nav-login" data-bs-toggle="modal">Sign In</a>
+        <a href="#login-modal" class="nav-login" data-bs-toggle="modal">Get Started </a>
+    </nav>
+    <div class="modal fade" id="login-modal" aria-hidden="true" aria-labelledby="signin" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content" id="login-box">
+            <div class="modal-header" style="border: none;">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <h1>WriteFLix</h1>
+                    <h2>Sign In</h2>
+                    <div class="my-3">
+                      <label for="email">Email:</label>
+                      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="pwd">Password:</label>
+                      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+                    </div>
+                    <div class="form-check mb-3">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                      </label>
+                    </div>
+                    <button type="submit" class="btn mt-4" id="login-btn">Login</button>
+                    <div class="form-footer my-4">
+                        New to WriteFlix?
+                        <a class="text-primary" data-bs-target="#signup-modal" data-bs-toggle="modal">SignUp Now</a>
+                    </div>
+                  </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="signup-modal" aria-hidden="true" aria-labelledby="signup" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content" id="signup-box">
+            <div class="modal-header" style="border: none;">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <h1>WriteFLix</h1>
+                    <h2>Sign Up</h2>
+                    <div class="mt-3 mb-2">
+                        <label for="username">Username:</label>
+                        <input type="text" class="form-control" id="username" placeholder="Username" name="email" required>
+                      </div>
+                    <div class="mb-2">
+                      <label for="email">Email:</label>
+                      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                    </div>
+                    <div class="mb-2">
+                      <label for="pwd">Password:</label>
+                      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+                    </div>
+                    <div class="mb-2">
+                        <label for="cnf-pwd">Confirm Password:</label>
+                        <input type="password" class="form-control" id="cnf-pwd" placeholder="Confirm password" name="pswd" required>
+                      </div>
+                    <button type="submit" class="btn mt-4" id="signup-btn">Create</button>
+                    <div class="form-footer mt-2">
+                        Already have Account?
+                        <a class="text-primary" data-bs-target="#login-modal" data-bs-toggle="modal">Login Here</a>
+                    </div>
+                  </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="intro">
+        <h1>What is WriteFLix..?</h1>
+        <section>
+          <div class="intro-para">
+            <p>
+              WriteFLix is a platform where you can express your thoughts and ideas and spread your knowledge. 
+              Anyone, either an expert or an undiscovered writer, can bring new ideas. 
+              Our purpose is to help them spread their thoughts and ideas.
+            </p>
+            <p>
+              Here people get quality content to read. So they Read & Grow their thoughts and knowledge.
+            </p>
+            <p>
+              It is a digital publishing model that supports good/quality content and story writers. 
+              Here we are trying to create an environment that is open to everyone but promotes only 
+              quality and authenticity.
+            </p>
+          </div>
+          <div class="intro-animation">
+            <div id="stage">
+              <div id="shape" class="cube backfaces">
+                <div class="plane one">1</div>
+                <div class="plane two">WriteFLix</div>
+                <div class="plane three">Read</div>
+                <div class="plane four">Write</div>
+                <div class="plane five">Grow</div>
+                <div class="plane six">6</div>
+                
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+</body>
+<script src="bootstrap-5.2.3/js/bootstrap.js"></script>
+</html>

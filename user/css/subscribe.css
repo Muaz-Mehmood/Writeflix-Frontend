@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Nerko+One&family=Pacifico&display=swap');
+
+:root{
+    --peach: #F7A072;
+    --parrot: #66ffac;
+    --navy-blue: #132c34;
+    --light: #f5f5f5;
+    --grey: #CFD7C7;
+    --blue: #40798C;
+    --alice: #8dcbff;
+    --purple: #ff90e3;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+section{
+    text-align: center;
+    color: var(--navy-blue);
+    width: 70vw;
+    margin: auto;
+}
+section a{
+    color: var(--navy-blue);
+    text-decoration: none;
+}
+section .logo{
+    margin: 20px;
+    padding-left: 20px;
+    font-family: 'Pacifico';
+    font-size: 38px;
+}
+section ul li{
+    list-style: none;
+    font-size: 20px;
+}
+section ul li i{
+    font-size: larger;
+    color: var(--navy-blue);
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+.card-container .card{
+    width: 350px;
+    height: 300px;
+    text-align: center;
+    padding: 30px;
+    border-radius: 15px;
+    background: radial-gradient(farthest-corner at -39px -27px, #00bdf9a3 , #ff42abb5);
+    box-shadow: 0 0 11px 0px #00000080;
+    margin: 40px;
+}
+.card p{
+    margin: 50px 0px;
+    font-size: 25px;
+}
+.card p::before{
+    content: "$ ";
+}
+.card button{
+    width: 50%;
+    margin: auto;
+    padding: 3px 8px;
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--navy-blue);
+    letter-spacing: 1px;
+    background: #132c3412;
+    border: 2px solid #132c348f;
+    border-radius: 30px;
+}

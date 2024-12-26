@@ -1,0 +1,106 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  background: #efefef;
+}
+nav a, nav a:hover{
+  color: var(--alice);
+}
+nav .active{
+  border-bottom: 2px solid var(--alice);
+}
+nav a:last-child{
+  color: var(--alice);
+  border: 1px solid var(--alice);
+}
+nav a:last-child:hover{
+  background: var(--alice);
+}
+.intro{
+  background: aliceblue;
+  color: var(--navy-blue);
+}
+.intro h1{
+  font-size: 7vw;
+  text-align: center;
+  font-weight: 600;
+  padding: 40px 0px;
+  background: var(--alice);
+  margin: auto;
+}
+.intro section{
+  display: flex;
+  width: 90vw;
+  margin: auto;
+  height: 60vh;
+  align-items: center;
+}
+.intro section .intro-para{
+  width: 60vw;
+  font-family: 'inter';
+  font-size: 1.3em;
+  color: var(--navy-blue);
+}
+.intro-animation {
+    width: 40vw;
+    height: 53vh;
+    perspective-origin: 50% 225px;
+}
+#stage {
+  width: 100%;
+  height: 100%;
+  transition: -webkit-transform 2s;
+  transform-style: preserve-3d;
+}  
+#shape {
+  position: relative;
+  top: 25%;
+  margin: auto;
+  height: 200px;
+  width: 200px;
+  transform-style: preserve-3d;
+}
+.plane {
+  position: absolute;
+  display: flex;
+  height: 200px;
+  width: 200px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  border-radius: 12px;
+  box-sizing: border-box;
+  font-family: 'inter';
+  font-size: 35pt;
+  color: var(--navy-blue);
+  background-color: var(--alice);
+  transition: -webkit-transform 2s, opacity 2s;
+  opacity: 0.9;
+}  
+#shape {
+  animation: spin 5s infinite linear;
+}
+@keyframes spin {
+  from { -webkit-transform: rotateY(0); }
+  to   { -webkit-transform: rotateY(-360deg); }
+}
+.cube .one {
+  transform: scale3d(1.2, 1.2, 1.2) rotateX(90deg) translateZ(100px);
+}
+.cube .two {
+  transform: scale3d(1.2, 1.2, 1.2) translateZ(100px);
+}
+.cube .three {
+  transform: scale3d(1.2, 1.2, 1.2) rotateY(90deg) translateZ(100px);
+}
+.cube .four {
+  transform: scale3d(1.2, 1.2, 1.2) rotateY(180deg) translateZ(100px);
+}
+.cube .five {
+  transform: scale3d(1.2, 1.2, 1.2) rotateY(-90deg) translateZ(100px);
+}
+.cube .six {
+  transform: scale3d(1.2, 1.2, 1.2) rotateX(-90deg) translateZ(100px) rotate(180deg);
+}
